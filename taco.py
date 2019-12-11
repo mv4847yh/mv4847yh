@@ -11,3 +11,4 @@ font = ImageFont.truetype('DejaVuSans.ttf', 20)
 img_draw.text([200, 200], 'Random Taco Cookbook', fill='purple', font=font)
 
 Image.show()
+
