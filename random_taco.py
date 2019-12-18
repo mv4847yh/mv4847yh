@@ -8,7 +8,9 @@ Image.save('taco_thumbnails.jpeg')
 img_draw = ImageDraw.Draw(Image)
 font = ImageFont.truetype('DejaVuSans.ttf', 20)
 
-img_draw.text([200, 200], 'Random Taco Cookbook', fill='purple', font=font)
+img_draw.text([200, 80], 'Random Taco Cookbook', fill='purple', font=font)
 
 Image.show()
+
+Image.save('modified_taco.jpg')
 
