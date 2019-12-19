@@ -1,3 +1,10 @@
+''''''
+
+Mohamed Hussein ITEC 1150-60.
+
+''''''
+
+
 import docx  # import this library to create and update a word document
 
 import requests # to get the url
@@ -47,10 +54,5 @@ for item in range(len(taco_book)):
     taco_word.add_paragraph(taco_book[item]["condiment"]["recipe"])
     taco_word.add_paragraph(taco_book[item]["mixin"]["recipe"])
     taco_word.add_paragraph(taco_book[item]["base_layer"]["recipe"])
-
+    taco_word.add_page_break()
 taco_word.save('Lo.docx')
-
-
-taco_word.add_page_break()
-
-taco_word.save('docx')
